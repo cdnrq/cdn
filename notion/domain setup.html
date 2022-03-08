@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en"><head><link rel="shortcut icon" type="image/png" href="./fav2.ico"/ ><title>React App</title><link rel="stylesheet" href="./React App_files/css"><link href="./React App_files/main.be450987.chunk.css" rel="stylesheet"><style data-jss="" data-meta="MuiInputBase">
+@-webkit-keyframes mui-auto-fill {}
+@-webkit-keyframes mui-auto-fill-cancel {}
+.MuiInputBase-root {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.1876em;
+  letter-spacing: 0.00938em;
+}
+.MuiInputBase-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+  cursor: default;
+}
+.MuiInputBase-multiline {
+  padding: 6px 0 7px;
+}
+.MuiInputBase-multiline.MuiInputBase-marginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-fullWidth {
+  width: 100%;
+}
+.MuiInputBase-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1876em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  animation-name: mui-auto-fill-cancel;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiInputBase-input::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:focus {
+  outline: 0;
+}
+.MuiInputBase-input:invalid {
+  box-shadow: none;
+}
+.MuiInputBase-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.MuiInputBase-input.Mui-disabled {
+  opacity: 1;
+}
+.MuiInputBase-input:-webkit-autofill {
+  animation-name: mui-auto-fill;
+  animation-duration: 5000s;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
+  opacity: 0.42;
+}
+.MuiInputBase-inputMarginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-inputMultiline {
+  height: auto;
+  resize: none;
+  padding: 0;
+}
+.MuiInputBase-inputTypeSearch {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+</style><style data-jss="" data-meta="PrivateNotchedOutline">
+.jss1 {
+  top: -5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0 8px;
+  overflow: hidden;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.jss2 {
+  padding: 0;
+  text-align: left;
+  transition: width 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  line-height: 11px;
+}
+.jss3 {
+  width: auto;
+  height: 11px;
+  display: block;
+  padding: 0;
+  font-size: 0.75em;
+  max-width: 0.01px;
+  text-align: left;
+  transition: max-width 50ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  visibility: hidden;
+}
+.jss3 > span {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.jss4 {
+  max-width: 1000px;
+  transition: max-width 100ms cubic-bezier(0.0, 0, 0.2, 1) 50ms;
+}
+</style><style data-jss="" data-meta="MuiOutlinedInput">
+.MuiOutlinedInput-root {
+  position: relative;
+  border-radius: 4px;
+}
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.87);
+}
+@media (hover: none) {
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #3f51b5;
+  border-width: 2px;
+}
+.MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: #f44336;
+}
+.MuiOutlinedInput-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.26);
+}
+.MuiOutlinedInput-colorSecondary.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #f50057;
+}
+.MuiOutlinedInput-adornedStart {
+  padding-left: 14px;
+}
+.MuiOutlinedInput-adornedEnd {
+  padding-right: 14px;
+}
+.MuiOutlinedInput-multiline {
+  padding: 18.5px 14px;
+}
+.MuiOutlinedInput-multiline.MuiOutlinedInput-marginDense {
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+}
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.23);
+}
+.MuiOutlinedInput-input {
+  padding: 18.5px 14px;
+}
+.MuiOutlinedInput-input:-webkit-autofill {
+  border-radius: inherit;
+}
+.MuiOutlinedInput-inputMarginDense {
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+}
+.MuiOutlinedInput-inputMultiline {
+  padding: 0;
+}
+.MuiOutlinedInput-inputAdornedStart {
+  padding-left: 0;
+}
+.MuiOutlinedInput-inputAdornedEnd {
+  padding-right: 0;
+}
+</style><style data-jss="" data-meta="MuiFormLabel">
+.MuiFormLabel-root {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.00938em;
+}
+.MuiFormLabel-root.Mui-focused {
+  color: #3f51b5;
+}
+.MuiFormLabel-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiFormLabel-root.Mui-error {
+  color: #f44336;
+}
+.MuiFormLabel-colorSecondary.Mui-focused {
+  color: #f50057;
+}
+.MuiFormLabel-asterisk.Mui-error {
+  color: #f44336;
+}
+</style><style data-jss="" data-meta="MuiInputLabel">
+.MuiInputLabel-root {
+  display: block;
+  transform-origin: top left;
+}
+.MuiInputLabel-formControl {
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(0, 24px) scale(1);
+}
+.MuiInputLabel-marginDense {
+  transform: translate(0, 21px) scale(1);
+}
+.MuiInputLabel-shrink {
+  transform: translate(0, 1.5px) scale(0.75);
+  transform-origin: top left;
+}
+.MuiInputLabel-animated {
+  transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+}
+.MuiInputLabel-filled {
+  z-index: 1;
+  transform: translate(12px, 20px) scale(1);
+  pointer-events: none;
+}
+.MuiInputLabel-filled.MuiInputLabel-marginDense {
+  transform: translate(12px, 17px) scale(1);
+}
+.MuiInputLabel-filled.MuiInputLabel-shrink {
+  transform: translate(12px, 10px) scale(0.75);
+}
+.MuiInputLabel-filled.MuiInputLabel-shrink.MuiInputLabel-marginDense {
+  transform: translate(12px, 7px) scale(0.75);
+}
+.MuiInputLabel-outlined {
+  z-index: 1;
+  transform: translate(14px, 20px) scale(1);
+  pointer-events: none;
+}
+.MuiInputLabel-outlined.MuiInputLabel-marginDense {
+  transform: translate(14px, 12px) scale(1);
+}
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(14px, -6px) scale(0.75);
+}
+</style><style data-jss="" data-meta="MuiFormControl">
+.MuiFormControl-root {
+  border: 0;
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+  vertical-align: top;
+}
+.MuiFormControl-marginNormal {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.MuiFormControl-marginDense {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.MuiFormControl-fullWidth {
+  width: 100%;
+}
+</style><style data-jss="" data-meta="MuiTextField">
+
+</style><style data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style><style data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    -webkit-print-color-adjust: exact;
+  }
+}
+</style><style data-jss="" data-meta="MuiButton">
+.MuiButton-root {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+.MuiButton-root:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-root:hover.Mui-disabled {
+  background-color: transparent;
+}
+.MuiButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiButton-text {
+  padding: 6px 8px;
+}
+.MuiButton-textPrimary {
+  color: #3f51b5;
+}
+.MuiButton-textPrimary:hover {
+  background-color: rgba(63, 81, 181, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-textSecondary {
+  color: #f50057;
+}
+.MuiButton-textSecondary:hover {
+  background-color: rgba(245, 0, 87, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 5px 15px;
+}
+.MuiButton-outlined.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiButton-outlinedPrimary {
+  color: #3f51b5;
+  border: 1px solid rgba(63, 81, 181, 0.5);
+}
+.MuiButton-outlinedPrimary:hover {
+  border: 1px solid #3f51b5;
+  background-color: rgba(63, 81, 181, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlinedSecondary {
+  color: #f50057;
+  border: 1px solid rgba(245, 0, 87, 0.5);
+}
+.MuiButton-outlinedSecondary:hover {
+  border: 1px solid #f50057;
+  background-color: rgba(245, 0, 87, 0.04);
+}
+.MuiButton-outlinedSecondary.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-contained {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  background-color: #e0e0e0;
+}
+.MuiButton-contained:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  background-color: #d5d5d5;
+}
+.MuiButton-contained.Mui-focusVisible {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiButton-contained:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiButton-contained.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+.MuiButton-contained:hover.Mui-disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #3f51b5;
+}
+.MuiButton-containedPrimary:hover {
+  background-color: #303f9f;
+}
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #3f51b5;
+  }
+}
+.MuiButton-containedSecondary {
+  color: #fff;
+  background-color: #f50057;
+}
+.MuiButton-containedSecondary:hover {
+  background-color: #c51162;
+}
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #f50057;
+  }
+}
+.MuiButton-disableElevation {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:hover {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-focusVisible {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:active {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-disabled {
+  box-shadow: none;
+}
+.MuiButton-colorInherit {
+  color: inherit;
+  border-color: currentColor;
+}
+.MuiButton-textSizeSmall {
+  padding: 4px 5px;
+  font-size: 0.8125rem;
+}
+.MuiButton-textSizeLarge {
+  padding: 8px 11px;
+  font-size: 0.9375rem;
+}
+.MuiButton-outlinedSizeSmall {
+  padding: 3px 9px;
+  font-size: 0.8125rem;
+}
+.MuiButton-outlinedSizeLarge {
+  padding: 7px 21px;
+  font-size: 0.9375rem;
+}
+.MuiButton-containedSizeSmall {
+  padding: 4px 10px;
+  font-size: 0.8125rem;
+}
+.MuiButton-containedSizeLarge {
+  padding: 8px 22px;
+  font-size: 0.9375rem;
+}
+.MuiButton-fullWidth {
+  width: 100%;
+}
+.MuiButton-startIcon {
+  display: inherit;
+  margin-left: -4px;
+  margin-right: 8px;
+}
+.MuiButton-startIcon.MuiButton-iconSizeSmall {
+  margin-left: -2px;
+}
+.MuiButton-endIcon {
+  display: inherit;
+  margin-left: 8px;
+  margin-right: -4px;
+}
+.MuiButton-endIcon.MuiButton-iconSizeSmall {
+  margin-right: -2px;
+}
+.MuiButton-iconSizeSmall > *:first-child {
+  font-size: 18px;
+}
+.MuiButton-iconSizeMedium > *:first-child {
+  font-size: 20px;
+}
+.MuiButton-iconSizeLarge > *:first-child {
+  font-size: 22px;
+}
+</style><style data-jss="" data-meta="MuiCollapse">
+.MuiCollapse-container {
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiCollapse-entered {
+  height: auto;
+  overflow: visible;
+}
+.MuiCollapse-hidden {
+  visibility: hidden;
+}
+.MuiCollapse-wrapper {
+  display: flex;
+}
+.MuiCollapse-wrapperInner {
+  width: 100%;
+}
+</style></head><body data-new-gr-c-s-check-loaded="14.1050.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1050.0"><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><section style="max-width: 666px;"><div class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal MuiFormControl-fullWidth"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined" data-shrink="false">Your Domain (e.g. example.org)</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"><input aria-invalid="false" placeholder="fruitionsite.com" type="text" class="MuiInputBase-input MuiOutlinedInput-input" value=""><fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline"><legend class="jss3"><span>Your Domain (e.g. example.org)</span></legend></fieldset></div></div><div class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal MuiFormControl-fullWidth"><label class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined" data-shrink="false">Notion URL for fruitionsite.com</label><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl"><input aria-invalid="false" placeholder="https://stephenou.notion.site/771ef38657244c27b9389734a9cbff44" type="text" class="MuiInputBase-input MuiOutlinedInput-input" value=""><fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline"><legend class="jss3"><span>Notion URL for fruitionsite.com</span></legend></fieldset></div></div><section><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button"><span class="MuiButton-label">Add a pretty link</span><span class="MuiTouchRipple-root"></span></button></section><section><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-outlinedSizeSmall MuiButton-sizeSmall" tabindex="0" type="button"><span class="MuiButton-label">Toggle Style And Script Settings</span><span class="MuiTouchRipple-root"></span></button></section><section><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-disableElevation" tabindex="0" type="button"><span class="MuiButton-label">Copy the code</span><span class="MuiTouchRipple-root"></span></button></section><div class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal MuiFormControl-fullWidth"><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline MuiOutlinedInput-multiline"><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension><textarea rows="1" aria-invalid="false" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline" style="height: 95px;" spellcheck="false">  /* CONFIGURATION STARTS HERE */
+  
+  /* Step 1: enter your domain name like fruitionsite.com */
+  const MY_DOMAIN = 'fruitionsite.com';
+  
+  /*
+   * Step 2: enter your URL slug to page ID mapping
+   * The key on the left is the slug (without the slash)
+   * The value on the right is the Notion page ID
+   */
+  const SLUG_TO_PAGE = {
+    '': '771ef38657244c27b9389734a9cbff44',
+  };
+  
+  /* Step 3: enter your page title and description for SEO purposes */
+  const PAGE_TITLE = '';
+  const PAGE_DESCRIPTION = '';
+  
+  /* Step 4: enter a Google Font name, you can choose from https://fonts.google.com */
+  const GOOGLE_FONT = '';
+  
+  /* Step 5: enter any custom scripts you'd like */
+  const CUSTOM_SCRIPT = ``;
+  
+  /* CONFIGURATION ENDS HERE */
+  
+  const PAGE_TO_SLUG = {};
+  const slugs = [];
+  const pages = [];
+  Object.keys(SLUG_TO_PAGE).forEach(slug =&gt; {
+    const page = SLUG_TO_PAGE[slug];
+    slugs.push(slug);
+    pages.push(page);
+    PAGE_TO_SLUG[page] = slug;
+  });
+  
+  addEventListener('fetch', event =&gt; {
+    event.respondWith(fetchAndApply(event.request));
+  });
+
+  function generateSitemap() {
+    let sitemap = '&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;';
+    slugs.forEach(
+      (slug) =&gt;
+        (sitemap +=
+          '&lt;url&gt;&lt;loc&gt;https://' + MY_DOMAIN + '/' + slug + '&lt;/loc&gt;&lt;/url&gt;')
+    );
+    sitemap += '&lt;/urlset&gt;';
+    return sitemap;
+  }
+  
+  const corsHeaders = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'GET, HEAD, POST, PUT, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+  };
+  
+  function handleOptions(request) {
+    if (request.headers.get('Origin') !== null &amp;&amp;
+      request.headers.get('Access-Control-Request-Method') !== null &amp;&amp;
+      request.headers.get('Access-Control-Request-Headers') !== null) {
+      // Handle CORS pre-flight request.
+      return new Response(null, {
+        headers: corsHeaders
+      });
+    } else {
+      // Handle standard OPTIONS request.
+      return new Response(null, {
+        headers: {
+          'Allow': 'GET, HEAD, POST, PUT, OPTIONS',
+        }
+      });
+    }
+  }
+  
+  async function fetchAndApply(request) {
+    if (request.method === 'OPTIONS') {
+      return handleOptions(request);
+    }
+    let url = new URL(request.url);
+    url.hostname = 'www.notion.so';
+    if (url.pathname === '/robots.txt') {
+      return new Response('Sitemap: https://' + MY_DOMAIN + '/sitemap.xml');
+    }
+    if (url.pathname === '/sitemap.xml') {
+      let response = new Response(generateSitemap());
+      response.headers.set('content-type', 'application/xml');
+      return response;
+    }
+    let response;
+    if (url.pathname.startsWith('/app') &amp;&amp; url.pathname.endsWith('js')) {
+      response = await fetch(url.toString());
+      let body = await response.text();
+      response = new Response(body.replace(/www.notion.so/g, MY_DOMAIN).replace(/notion.so/g, MY_DOMAIN), response);
+      response.headers.set('Content-Type', 'application/x-javascript');
+      return response;
+    } else if ((url.pathname.startsWith('/api'))) {
+      // Forward API
+      response = await fetch(url.toString(), {
+        body: url.pathname.startsWith('/api/v3/getPublicPageData') ? null : request.body,
+        headers: {
+          'content-type': 'application/json;charset=UTF-8',
+          'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36'
+        },
+        method: 'POST',
+      });
+      response = new Response(response.body, response);
+      response.headers.set('Access-Control-Allow-Origin', '*');
+      return response;
+    } else if (slugs.indexOf(url.pathname.slice(1)) &gt; -1) {
+      const pageId = SLUG_TO_PAGE[url.pathname.slice(1)];
+      return Response.redirect('https://' + MY_DOMAIN + '/' + pageId, 301);
+    } else {
+      response = await fetch(url.toString(), {
+        body: request.body,
+        headers: request.headers,
+        method: request.method,
+      });
+      response = new Response(response.body, response);
+      response.headers.delete('Content-Security-Policy');
+      response.headers.delete('X-Content-Security-Policy');
+    }
+  
+    return appendJavascript(response, SLUG_TO_PAGE);
+  }
+  
+  class MetaRewriter {
+    element(element) {
+      if (PAGE_TITLE !== '') {
+        if (element.getAttribute('property') === 'og:title'
+          || element.getAttribute('name') === 'twitter:title') {
+          element.setAttribute('content', PAGE_TITLE);
+        }
+        if (element.tagName === 'title') {
+          element.setInnerContent(PAGE_TITLE);
+        }
+      }
+      if (PAGE_DESCRIPTION !== '') {
+        if (element.getAttribute('name') === 'description'
+          || element.getAttribute('property') === 'og:description'
+          || element.getAttribute('name') === 'twitter:description') {
+          element.setAttribute('content', PAGE_DESCRIPTION);
+        }
+      }
+      if (element.getAttribute('property') === 'og:url'
+        || element.getAttribute('name') === 'twitter:url') {
+        element.setAttribute('content', MY_DOMAIN);
+      }
+      if (element.getAttribute('name') === 'apple-itunes-app') {
+        element.remove();
+      }
+    }
+  }
+  
+  class HeadRewriter {
+    element(element) {
+      if (GOOGLE_FONT !== '') {
+        element.append(`&lt;link href="https://fonts.googleapis.com/css?family=${GOOGLE_FONT.replace(' ', '+')}:Regular,Bold,Italic&amp;display=swap" rel="stylesheet"&gt;
+        &lt;style&gt;* { font-family: "${GOOGLE_FONT}" !important; }&lt;/style&gt;`, {
+          html: true
+        });
+      }
+      element.append(`&lt;style&gt;
+      div.notion-topbar &gt; div &gt; div:nth-child(3) { display: none !important; }
+      div.notion-topbar &gt; div &gt; div:nth-child(4) { display: none !important; }
+      div.notion-topbar &gt; div &gt; div:nth-child(5) { display: none !important; }
+      div.notion-topbar &gt; div &gt; div:nth-child(6) { display: none !important; }
+      div.notion-topbar-mobile &gt; div:nth-child(3) { display: none !important; }
+      div.notion-topbar-mobile &gt; div:nth-child(4) { display: none !important; }
+      div.notion-topbar &gt; div &gt; div:nth-child(1n).toggle-mode { display: block !important; }
+      div.notion-topbar-mobile &gt; div:nth-child(1n).toggle-mode { display: block !important; }
+      &lt;/style&gt;`, {
+        html: true
+      })
+    }
+  }
+  
+  class BodyRewriter {
+    constructor(SLUG_TO_PAGE) {
+      this.SLUG_TO_PAGE = SLUG_TO_PAGE;
+    }
+    element(element) {
+      element.append(`&lt;div style="display:none"&gt;Powered by &lt;a href="http://fruitionsite.com"&gt;Fruition&lt;/a&gt;&lt;/div&gt;
+      &lt;script&gt;
+      window.CONFIG.domainBaseUrl = 'https://${MY_DOMAIN}';
+      const SLUG_TO_PAGE = ${JSON.stringify(this.SLUG_TO_PAGE)};
+      const PAGE_TO_SLUG = {};
+      const slugs = [];
+      const pages = [];
+      const el = document.createElement('div');
+      let redirected = false;
+      Object.keys(SLUG_TO_PAGE).forEach(slug =&gt; {
+        const page = SLUG_TO_PAGE[slug];
+        slugs.push(slug);
+        pages.push(page);
+        PAGE_TO_SLUG[page] = slug;
+      });
+      function getPage() {
+        return location.pathname.slice(-32);
+      }
+      function getSlug() {
+        return location.pathname.slice(1);
+      }
+      function updateSlug() {
+        const slug = PAGE_TO_SLUG[getPage()];
+        if (slug != null) {
+          history.replaceState(history.state, '', '/' + slug);
+        }
+      }
+      function onDark() {
+        el.innerHTML = '&lt;div title="Change to Light Mode" style="margin-left: auto; margin-right: 14px; min-width: 0px;"&gt;&lt;div role="button" tabindex="0" style="user-select: none; transition: background 120ms ease-in 0s; cursor: pointer; border-radius: 44px;"&gt;&lt;div style="display: flex; flex-shrink: 0; height: 14px; width: 26px; border-radius: 44px; padding: 2px; box-sizing: content-box; background: rgb(46, 170, 220); transition: background 200ms ease 0s, box-shadow 200ms ease 0s;"&gt;&lt;div style="width: 14px; height: 14px; border-radius: 44px; background: white; transition: transform 200ms ease-out 0s, background 200ms ease-out 0s; transform: translateX(12px) translateY(0px);"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;';
+        document.body.classList.add('dark');
+        __console.environment.ThemeStore.setState({ mode: 'dark' });
+      };
+      function onLight() {
+        el.innerHTML = '&lt;div title="Change to Dark Mode" style="margin-left: auto; margin-right: 14px; min-width: 0px;"&gt;&lt;div role="button" tabindex="0" style="user-select: none; transition: background 120ms ease-in 0s; cursor: pointer; border-radius: 44px;"&gt;&lt;div style="display: flex; flex-shrink: 0; height: 14px; width: 26px; border-radius: 44px; padding: 2px; box-sizing: content-box; background: rgba(135, 131, 120, 0.3); transition: background 200ms ease 0s, box-shadow 200ms ease 0s;"&gt;&lt;div style="width: 14px; height: 14px; border-radius: 44px; background: white; transition: transform 200ms ease-out 0s, background 200ms ease-out 0s; transform: translateX(0px) translateY(0px);"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;';
+        document.body.classList.remove('dark');
+        __console.environment.ThemeStore.setState({ mode: 'light' });
+      }
+      function toggle() {
+        if (document.body.classList.contains('dark')) {
+          onLight();
+        } else {
+          onDark();
+        }
+      }
+      function addDarkModeButton(device) {
+        const nav = device === 'web' ? document.querySelector('.notion-topbar').firstChild : document.querySelector('.notion-topbar-mobile');
+        el.className = 'toggle-mode';
+        el.addEventListener('click', toggle);
+        nav.appendChild(el);
+        onLight();
+      }
+      const observer = new MutationObserver(function() {
+        if (redirected) return;
+        const nav = document.querySelector('.notion-topbar');
+        const mobileNav = document.querySelector('.notion-topbar-mobile');
+        if (nav &amp;&amp; nav.firstChild &amp;&amp; nav.firstChild.firstChild
+          || mobileNav &amp;&amp; mobileNav.firstChild) {
+          redirected = true;
+          updateSlug();
+          addDarkModeButton(nav ? 'web' : 'mobile');
+          const onpopstate = window.onpopstate;
+          window.onpopstate = function() {
+            if (slugs.includes(getSlug())) {
+              const page = SLUG_TO_PAGE[getSlug()];
+              if (page) {
+                history.replaceState(history.state, 'bypass', '/' + page);
+              }
+            }
+            onpopstate.apply(this, [].slice.call(arguments));
+            updateSlug();
+          };
+        }
+      });
+      observer.observe(document.querySelector('#notion-app'), {
+        childList: true,
+        subtree: true,
+      });
+      const replaceState = window.history.replaceState;
+      window.history.replaceState = function(state) {
+        if (arguments[1] !== 'bypass' &amp;&amp; slugs.includes(getSlug())) return;
+        return replaceState.apply(window.history, arguments);
+      };
+      const pushState = window.history.pushState;
+      window.history.pushState = function(state) {
+        const dest = new URL(location.protocol + location.host + arguments[2]);
+        const id = dest.pathname.slice(-32);
+        if (pages.includes(id)) {
+          arguments[2] = '/' + PAGE_TO_SLUG[id];
+        }
+        return pushState.apply(window.history, arguments);
+      };
+      const open = window.XMLHttpRequest.prototype.open;
+      window.XMLHttpRequest.prototype.open = function() {
+        arguments[1] = arguments[1].replace('${MY_DOMAIN}', 'www.notion.so');
+        return open.apply(this, [].slice.call(arguments));
+      };
+    &lt;/script&gt;${CUSTOM_SCRIPT}`, {
+        html: true
+      });
+    }
+  }
+  
+  async function appendJavascript(res, SLUG_TO_PAGE) {
+    return new HTMLRewriter()
+      .on('title', new MetaRewriter())
+      .on('meta', new MetaRewriter())
+      .on('head', new HeadRewriter())
+      .on('body', new BodyRewriter(SLUG_TO_PAGE))
+      .transform(res);
+  }</textarea><textarea aria-hidden="true" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiOutlinedInput-inputMultiline" readonly="" tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0px); width: 621px;"></textarea><fieldset aria-hidden="true" class="jss1 MuiOutlinedInput-notchedOutline" style="padding-left: 8px;"><legend class="jss2" style="width: 0.01px;"><span>​</span></legend></fieldset></div></div></section></div><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={1:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="./React App_files/2.af04e8c1.chunk.js"></script><script src="./React App_files/main.6db4e43a.chunk.js"></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><grammarly-mirror data-grammarly-shadow-root="true" class="cGcvT"></grammarly-mirror></html>

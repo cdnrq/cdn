@@ -1,0 +1,5 @@
+print("Your certificate and private key is:", "\n")
+f = open("/etc/letsencrypt/live/ntws.gq/fullchain.pem", "r")
+print(f.read())
+f = open("/etc/letsencrypt/live/ntws.gq/privkey.pem", "r")
+print(f.read())
